@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/v1/:match*",
+      "destination": "https://todo-list-backend-pink.vercel.app/v1/:match*"
+    },
+    { "source": "/", "destination": "https://todo-list-frontend-ashen.vercel.app/" },
+    {
+      "source": "/:match*",
+      "destination": "https://todo-list-frontend-ashen.vercel.app/:match*"
+    }
+  ]
+}
+
+

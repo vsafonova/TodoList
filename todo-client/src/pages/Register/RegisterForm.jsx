@@ -31,7 +31,7 @@ export default function RegisterForm() {
   }, [registerStatus]);
 
   async function sendData(payload) {
-    const url = "http://localhost:8080/register";
+    const url = `${host}/v1/register`;
     const res = await fetch(url, {
       method: "POST",
       withCredentials: true,

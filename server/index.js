@@ -72,7 +72,7 @@ passport.deserializeUser(async (email, done) => {
   done(null, user);
 });
 
-app.post("/register", async (req, res) => {
+app.post("/v1/register", async (req, res) => {
   const { username, email, password } = req.body;
 
   if (await findUserByEmail(email)) {
@@ -98,7 +98,7 @@ app.get("/v1/todo", (req, res) => {
   }
 });
 
-app.get("/session", (req, res) => {
+app.get("/v1/session", (req, res) => {
   if (req.isAuthenticated()) {
     res.status(200).json("Authorized ");
   } else {
@@ -106,11 +106,11 @@ app.get("/session", (req, res) => {
   }
 });
 
-app.post("/login", passport.authenticate("local"), (req, res) => {
+app.post("/v1/login", passport.authenticate("local"), (req, res) => {
   res.json("Welcome " + req.user.name);
 });
 
-app.post("/logout", function (req, res, next) {
+app.post("/v1/logout", function (req, res, next) {
   req.logout(function (err) {
     if (err) {
       return next(err);

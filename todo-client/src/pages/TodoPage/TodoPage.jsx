@@ -8,6 +8,7 @@ import LogOutBtn from "../../components/Buttons/LogOutBtn";
 import styles from "./TodoPage.module.css";
 import { useEffect } from "react";
 import LoadMoreTasksButton from "../../components/Buttons/LoadMoreTasksButton";
+import { host } from "../../config"
 
 export default function TodoPage() {
   const { taskItems, setTaskItems, setLoggedIn } =
@@ -23,7 +24,7 @@ export default function TodoPage() {
     sendData(payload);
 
     async function sendData(payload) {
-      const url = "http://localhost:8080/v1/todo/filter";
+      const url = `${host}/v1/todo/filter`;
       const res = await fetch(url, {
         method: "POST",
         withCredentials: true,
@@ -40,7 +41,7 @@ export default function TodoPage() {
   }, []);
 
   async function loadMoreData(payload) {
-    const url = "http://localhost:8080/v1/todo/filter";
+    const url = `${host}/v1/todo/filter`;
     const res = await fetch(url, {
       method: "POST",
       withCredentials: true,
@@ -79,7 +80,7 @@ export default function TodoPage() {
   }
 
   async function logOut() {
-    const url = "http://localhost:8080/logout";
+    const url = `${host}/v1/logout`;
     const res = await fetch(url, {
       method: "POST",
       withCredentials: true,

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { convertLocaltimeStampToUTC } from "../../helpers/datetime";
 import "./AddTask.css";
+import { host } from "../../config";
 
 export default function AddTask({ visible, onClose, updatePage }) {
   const [name, setName] = useState("");
@@ -21,7 +22,7 @@ export default function AddTask({ visible, onClose, updatePage }) {
     setDate(e.target.value);
   };
   async function sendData(payload) {
-    const url = "http://localhost:8080/v1/todo/add";
+    const url = `${host}/v1/todo/add`;
     const res = await fetch(url, {
       method: "POST",
       withCredentials: true,

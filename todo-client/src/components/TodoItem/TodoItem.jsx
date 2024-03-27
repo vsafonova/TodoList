@@ -1,7 +1,6 @@
 import { useState } from "react";
 import MoreInfo from "../MoreInfo/MoreInfo";
 import "./ToDoItem.css";
-import { host } from "../../config";
 
 export default function TodoItem({ task, updatePage }) {
   const [showMore, setShowMore] = useState(false);
@@ -24,7 +23,7 @@ export default function TodoItem({ task, updatePage }) {
   }
 
   async function sendData(payload) {
-    const url = `${host}/v1/todo/update`;
+    const url = "/v1/todo/update";
     const res = await fetch(url, {
       method: "PUT",
       withCredentials: true,

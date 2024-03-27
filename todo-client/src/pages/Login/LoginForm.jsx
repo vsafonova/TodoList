@@ -3,7 +3,6 @@ import { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 import { TaskProviderContext } from "../../provider/TaskProvider";
-import { host } from "../../config"
 
 export default function LoginForm() {
   const { setLoggedIn } = useContext(TaskProviderContext);
@@ -38,7 +37,7 @@ export default function LoginForm() {
 
   useEffect(() => {
     async function checkToken() {
-      const url = `${host}/v1/session`;
+      const url = "/v1/session";
       const res = await fetch(url, {
         method: "GET",
         withCredentials: true,
@@ -56,7 +55,7 @@ export default function LoginForm() {
   }, []);
 
   async function sendData(payload) {
-    const url = `${host}/v1/login`;
+    const url = "/v1/login";
     const res = await fetch(url, {
       method: "POST",
       withCredentials: true,

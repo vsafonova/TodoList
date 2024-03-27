@@ -4,7 +4,6 @@ import {
   convertTimestampToDatetimeLocal,
 } from "../../helpers/datetime";
 import "./MoreInfo.css";
-import { host } from "../../config";
 
 export default function MoreInfo({ task, visible, onClose, updatePage }) {
   const localtimestamp = convertTimestampToDatetimeLocal(task.due_date);
@@ -27,7 +26,7 @@ export default function MoreInfo({ task, visible, onClose, updatePage }) {
   };
 
   async function sendData(payload) {
-    const url = `${host}/v1/todo/update`;
+    const url = "/v1/todo/update";
     const res = await fetch(url, {
       method: "PUT",
       withCredentials: true,
@@ -41,7 +40,7 @@ export default function MoreInfo({ task, visible, onClose, updatePage }) {
   }
 
   async function deleteData(payload) {
-    const url = `${host}/v1/todo/delete`;
+    const url = "/v1/todo/delete";
     const res = await fetch(url, {
       method: "DELETE",
       withCredentials: true,

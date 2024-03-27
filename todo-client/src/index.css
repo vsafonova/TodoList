@@ -121,3 +121,9 @@ span {
   height: 100%;
   padding: 1rem;
 }
+
+.showpassword-box .space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

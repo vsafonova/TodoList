@@ -96,13 +96,13 @@ export default function RegisterForm() {
             {...register("password")}
             placeholder="Enter password"
           />
-          <div className="register-form-show-password-box space">
+          <div className="showpassword-box space">
             <input
               type="checkbox"
               className="register-form-checkbox"
               onClick={showPassword}
             />
-            <span className="register-form-p">Show password</span>
+            <span>Show password</span>
           </div>
         </div>
         <div className="register-form-group">

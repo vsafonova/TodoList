@@ -3,24 +3,17 @@
 Web app for managing a TODO list.
 
 ## Project Brief
-<p>
-  Build an API that is connected to a database using API design principles such as REST.
-</p>
-<p>
-  The only requirement is that the backend should be a Node.js service with persistent storage (Database). 
-  The front end should be a simple web app that interacts with said backend.
-</p>
-<ul>The app has the following functionalities:
-  <li>User Registration</li>
-  <li>User authentication</li>
-  <li>CRUD operations for tasks</li>
+Build an API that is connected to a database using API design principles such as REST.
+
+## Criteria
+<ul>
+  <li>Develop and present a backend service in node.js</li>
+   <li>Use REST(less/full) principles.</li>
+   <li>Use HTTP Protocol best practices.</li>
+   <li>Integrate a PostgreSQL database.</li>
+   <li>Implement user authentication and registration.</li>
+    <li>Implement CRUD operations for tasks.</li>
 </ul>
-<p>
-  We were provided with a PostgreSQL database endpoint and credentials.
-</p>
-<p>
-  We used acquired knowledge around GET, POST, PATCH, and DELETE requests to interact with the backend, following RESTful principles.
-</p>
 
 ## Tools and stack:
 

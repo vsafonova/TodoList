@@ -19,12 +19,12 @@ Web app for managing a TODO list.
   We were provided with a PostgreSQL database endpoint and credentials.
 </p>
 <p>
-  We used acquired knowledge around GET, POST, PATCH, and DELETE requests to interact with the backend, following RESTful principles
+  We used acquired knowledge around GET, POST, PATCH, and DELETE requests to interact with the backend, following RESTful principles.
 </p>
 
 ## Tools and stack:
 
-- HTML / CSS / React.js / node.js / RESTful API / database / SEO / Accessibility / User authentication and authorization / CRUD operations / SQL
+- HTML / CSS / React.js / node.js / RESTful API / Database / SEO / Accessibility / User authentication and authorization / CRUD operations / SQL
 
 ## Project links:
 

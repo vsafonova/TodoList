@@ -38,7 +38,7 @@ To set up this project locally, follow the steps below:
 1. **Clone the Repository:**
 
     ```bash
-    https://github.com/hyper-island-collaboration-work/yennenga-progress-group-3.git
+    https://github.com/vsafonova/TodoList.git
     ```
 
 2. **Install dependencies:**

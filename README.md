@@ -24,7 +24,7 @@ Web app for managing a TODO list.
 
 ## Tools and stack:
 
-- HTML / CSS / React.js / node.js / RESTful API / Database / SEO / Accessibility / User authentication and authorization / CRUD operations / SQL
+- HTML / CSS / React.js / Node.js / RESTful API / Database / SEO / Accessibility / User authentication and authorization / CRUD operations / SQL
 
 ## Project links:
 

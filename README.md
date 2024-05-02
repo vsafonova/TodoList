@@ -29,3 +29,27 @@ Web app for managing a TODO list.
 ## Project links:
 
 ### Website: [Visit the website](https://todo-list-gules-xi.vercel.app/)
+
+## Project Setup Instructions:
+To set up this project locally, follow the steps below:
+
+### To open web site locally:
+
+1. **Clone the Repository:**
+
+    ```bash
+    https://github.com/hyper-island-collaboration-work/yennenga-progress-group-3.git
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+3. **Running the web-site:**
+
+    ```bash
+    npm run dev
+    ```    
+
+4. **Open web site locally**

@@ -2,7 +2,7 @@
 
 Web app for managing a TODO list.
 
-## Project brief
+## Project Brief
 <p>
   Build an API that is connected to a database using API design principles such as REST.
 </p>
@@ -33,7 +33,7 @@ Web app for managing a TODO list.
 ## Project Setup Instructions:
 To set up this project locally, follow the steps below:
 
-### To open web site locally:
+### To open the website locally:
 
 1. **Clone the Repository:**
 
@@ -46,7 +46,7 @@ To set up this project locally, follow the steps below:
     ```bash
     npm install
     ```
-3. **Running the web-site:**
+3. **Running the website:**
 
     ```bash
     npm run dev

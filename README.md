@@ -11,7 +11,7 @@ Build an API that is connected to a database using API design principles such as
    <li>Use REST(less/full) principles.</li>
    <li>Use HTTP Protocol best practices.</li>
    <li>Integrate a PostgreSQL database.</li>
-   <li>Implement user authentication and registration.</li>
+   <li>Implement user authentication and authorization.</li>
     <li>Implement CRUD operations for tasks.</li>
 </ul>
 
